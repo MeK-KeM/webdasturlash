@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Misol 1</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <form action="index.html" method="post">
+        <label for="university">Oliy Talim Muassasasi :</label>
+        <input id="university" type="text" name="university" value="TATU">
+        <br>
+        <label for="fio">FIO:</label>
+        <input id="fio" type="text" name="fio" placeholder="Familiya Ism Sharif">
+        <br>
+        <label>Talaba qiziqishlari :</label>
+        <input type="checkbox" name="st_skills" value="1">
+        <p>Fizika</p>
+        <br>
+        <input type="checkbox" name="st_skills" value="2">
+        <p>Matematika</p>
+        <br>
+        <input type="checkbox" name="st_skills" value="3">
+        <p>C++</p>
+        <br>
+        <input type="checkbox" name="st_skills" value="4">
+        <p>Falsafa</p>
+        <br>
+        <label>Nechinchi bosqich talabasisiz?</label>
+        <input type="radio" name="group_lvl" value="1">
+        <p>1</p>
+        <input type="radio" name="group_lvl" value="2">
+        <p>2</p>
+        <input type="radio" name="group_lvl" value="3">
+        <p>3</p>
+        <input type="radio" name="group_lvl" value="4">
+        <p>4</p>
+        <br>
+        <label for="group_num">Gurux raqamini tanlang:</label>
+        <select name="gender">
+          <option value="210-15" selected="selected">210-15</option>
+          <option value="211-15">211-15</option>
+          <option value="212-15">212-15</option>
+          <option value="213-15">213-15</option>
+          <option value="214-15">214-15</option>
+          <option value="215-15">215-15</option>
+          <option value="220-15">220-15</option>
+          <option value="221-15">221-15</option>
+          <option value="222-15">222-15</option>
+        </select>
+        <br>
+        <label for="secret_key">Gurux sirli kalitini kiriting:</label>
+        <input id="secret_key" type="password" name="pass">
+        <br>
+        <label for="language_skills">Qaysi tillarda gaplasha olasiz?</label>
+        <select id="language_skills" name="languages" multiple="multiple">
+          <option value="uz" selected="selected">O'zbekcha</option>
+          <option value="ru">Ruscha</option>
+          <option value="eng">Inglizcha</option>
+          <option value="kr">Koreyscha</option>
+          <option value="tj">Tojikcha</option>
+        </select>
+        <br>
+        <label for="message">Taklif yoki shikoyatlaringiz:</label>
+        <textarea id="message" name="message" rows="4" cols="30"></textarea>
+        <br>
+        <p><b>Eslatma!</b></p>
+        <br>
+        <textarea name="terms" cols="30" rows="4" readonly="true" style="resize: none;">Ma'lumotlar to'liq va aniqligi ta'minlanmagan holda murojat ko'rib chiqilmaydi</textarea>
+        <br>
+        <label for="group_logo">Gurux Belgisini kiriting:</label>
+        <input id="group_logo" type="file" name="group_logo" value="">
+
+        <br>
+
+        <input type="image" width="120" src="submit.gif" name="submitBtn" alt="Jo'natish">
+        <!-- <input type="submit" name="submitBtn" value="Yuborish">
+        <input type="reset" name="resetBtn" value="Tozalash">
+      </form>
+  </body>
+</html>

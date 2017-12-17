@@ -1,0 +1,43 @@
+body {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin: 0px;
+}
+form {
+  display: table;
+  margin: 0 auto;
+  padding: 10px 15px;
+  background-color: white;
+  border: 1px solid #d8d8d8;
+}
+form label {
+  padding: 5px 0 5px;
+  display: block;
+}
+form p {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  margin-left: 5px;
+}
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  vertical-align: middle;
+}
+input[type="radio"] {
+  margin-top: 0px;
+}
+input[type="image"],
+input[type="reset"],
+input[type="submit"] {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px 5px 0 0;
+}
