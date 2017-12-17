@@ -1,5 +1,2 @@
-# documents #
 .docx
-
-# Static directories #
-.idea
+/.idea
