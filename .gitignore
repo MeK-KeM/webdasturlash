@@ -1,2 +1,5 @@
-.docx
+# Word temporary
+~$*.doc*
+
+# Static directories
 /.idea
