@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+
+    <script type="text/javascript">
+      var
+      info = [],
+      fields = [ 'Name', 'Surname', 'Group', 'Brith Year'];
+      console.log( fields );
+      fields.push('Salary');
+      console.log( fields );
+
+      function fieldCheck( _name ) {
+          var tmpInfo;
+          alert( _name + ' invalid, please check it');
+          tmpInfo = prompt( "Your " + _name );
+
+          return ( tmpInfo )? true: fieldCheck( _name );
+      }
+
+      for( var i = 0; i < fields.length; i++ ) {
+        var tmpInfo;
+        tmpInfo = prompt( "Your " + fields[i] );
+        if( tmpInfo ) {
+          console.log( tmpInfo );
+          info.push( tmpInfo );
+        } else {
+          fieldCheck( fields[i] );
+        }
+      }
+
+      document.writeln('<table border="1" cellspacing="0" cellpadding="3">');
+      document.writeln('<tr>');
+      for( var i = 0; i < fields.length; i++ ) {
+          document.writeln( '<td>' + fields[i] + '</td>' );
+      }
+      document.writeln('</tr>');
+      document.writeln('<tr>');
+      for( var i = 0; i < fields.length; i++ ) {
+          document.writeln( '<td>' + info[i] + '</td>' );
+      }
+      document.writeln('</tr>');
+      document.writeln('</table>');
+
+    </script>
+  </body>
+</html>

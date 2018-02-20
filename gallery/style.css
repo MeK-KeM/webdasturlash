@@ -1,0 +1,39 @@
+/* style.css */
+html, body {
+  margin: 0px;
+  min-height: 100%;
+}
+.gallery {
+  background-color: #f3f3f3;
+  position: relative;
+}
+
+.gallery .image_block {
+  min-height: 100vh;
+  border: 1px solid silver;
+  background-size: cover !important;
+}
+
+.gallery ul {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  list-style: none;
+  background: rgba( 0, 0, 0, .3 );
+}
+
+.gallery ul li {
+  height: auto;
+  margin: 15px;
+  width: calc( 100%/6 - 30px );
+}
+
+.gallery li img {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+}
